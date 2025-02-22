@@ -1791,9 +1791,6 @@ input[name=menu-list]:checked+label {
         top: 0px;
     }
 }
-.social-icons{
-    height: 15px;
-}
 .github{
     height: 15px;
     filter: opacity(0.7);
@@ -1821,5 +1818,8 @@ input[name=menu-list]:checked+label {
     .twitter{
         height: 14px;
         filter: opacity(0.7);
+    }
+    .my-info .name{
+     margin-top: 20px;   
     }
 }

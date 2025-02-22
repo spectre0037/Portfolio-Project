@@ -3702,6 +3702,7 @@
     filter: opacity(0.7);
 }
 @media screen and (max-width:600px) {
+    
     .social-icons{
         height: 15px;
     }
