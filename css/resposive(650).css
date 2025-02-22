@@ -178,6 +178,9 @@ header {
 }
 
 @media screen and (max-width:500px) {
+    .home-mun{
+        display: none;
+    }
     .works-content-wrap {
         width: 100% !important
     }
