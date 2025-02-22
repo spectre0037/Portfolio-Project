@@ -1806,3 +1806,20 @@ input[name=menu-list]:checked+label {
     height: 14px;
     filter: opacity(0.7);
 }
+@media screen and (max-width:600px) {
+    .social-icons{
+        height: 15px;
+    }
+    .github{
+        height: 15px;
+        filter: opacity(0.7);
+    }
+    .linkedin{
+        height: 20px;
+        filter: opacity(0.7);
+    }
+    .twitter{
+        height: 14px;
+        filter: opacity(0.7);
+    }
+}
