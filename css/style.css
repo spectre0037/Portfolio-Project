@@ -56,7 +56,7 @@ html {
     background: #fff;
     font-size: 60px;
     z-index: 1000;
-    color: var(--gray-orange);
+    color: var(--dark-blue);
     display: flex;
     align-items: center;
     justify-content: center
@@ -207,7 +207,7 @@ html {
 
 header {
     position: relative;
-    top: 15px;
+    top: -30px;
     width: 72px;
     text-align: center;
     float: left;
@@ -347,7 +347,8 @@ header {
 .main-card {
     position: relative;
     width: 480px;
-    height: 100%;
+    top: -50px;
+    height: 110%;
     float: left;
     border-radius: 4px;
     -webkit-border-radius: 4px;
@@ -359,8 +360,8 @@ header {
 .main-card::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -50px;
+    left: -50px;
     width: 100%;
     height: 100%;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, .05);
@@ -409,6 +410,7 @@ header {
     height: 350px;
     background-position: center center;
     background-size: cover;
+    background-repeat: no-repeat;
     overflow: hidden;
     border-radius: 4px;
     -webkit-border-radius: 4px;
@@ -592,7 +594,7 @@ header {
     overflow: hidden;
     left: 560px;
     right: 0;
-    top: 15px;
+    top: -35px;
     bottom: 15px;
     width: auto;
     height: auto;
@@ -717,7 +719,7 @@ header {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    background: linear-gradient(135deg, rgba(109, 118, 204, .253) 0, rgba(120, 204, 109, .01) 100%)
+    background: #78cc6d3b;
 }
 
 .about-me-section-content {
@@ -1288,7 +1290,7 @@ progress-ring {
 }
 
 .item .know-list span.marker+span {
-    color: #999;
+    color:var(--dark-blue);
     font-size: 16px;
     font-weight: 400
 }
@@ -1683,9 +1685,12 @@ input[name=menu-list]:checked+label {
     height: 100%;
     width: 100%
 }
-
+.fw-small{
+    font-size:smaller;
+}
 .contact-bottom .info-list {
-    padding: 0 20px
+    padding: 0 20px;
+    margin-top: -75px;
 }
 
 .contact-bottom .info-list ul {
@@ -1698,7 +1703,7 @@ input[name=menu-list]:checked+label {
     width: 49%;
     padding: 0 0;
     margin: 5px 15px;
-    font-size: 15px
+    font-size: 15px;
 }
 
 .contact-bottom .info-list li strong {
