@@ -1,81 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>AI-Driven Cybersecurity Investigation</title>
-        <link rel="stylesheet" href="/css/project_style.css">
-    </head>
-    <body>
-        <div class="container">
-            <h1>AI-Driven Cybersecurity Investigation</h1>
-            <p>AI-driven security automation enhances threat detection, reduces
-                investigation time, and improves accuracy. By leveraging
-                advanced machine learning algorithms and big data analytics, our
-                AI system can identify and respond to threats in real-time,
-                providing a robust defense against cyber attacks.</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Driven Cybersecurity Investigation</title>
+    <link rel="stylesheet" href="../css/project_style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI-Driven Cybersecurity Investigation</h1>
+        <p>AI-driven security automation enhances threat detection, reduces investigation time, and improves accuracy. By leveraging advanced machine learning algorithms and big data analytics, our AI system can identify and respond to threats in real-time, providing a robust defense against cyber attacks.</p>
 
-            <h2>Key Achievements</h2>
-            <ul>
-                <li><strong>70% reduction in investigation time:</strong> Our AI
-                    system automates the analysis of security logs and alerts,
-                    significantly reducing the time required to investigate
-                    potential threats.</li>
-                <li><strong>95% accuracy in AI-based threat
-                        classification:</strong> Utilizing state-of-the-art
-                    machine learning models, our system achieves high accuracy
-                    in identifying and classifying various types of cyber
-                    threats.</li>
-                <li><strong>Automated KQL query execution for security
-                        monitoring:</strong> The system automatically executes
-                    Kusto Query Language (KQL) queries to monitor and analyze
-                    security data, ensuring continuous protection and quick
-                    response to incidents.</li>
-            </ul>
+        <h2>Key Achievements</h2>
+        <ul>
+            <li><strong>70% reduction in investigation time:</strong> Our AI system automates the analysis of security logs and alerts, significantly reducing the time required to investigate potential threats.</li>
+            <li><strong>95% accuracy in AI-based threat classification:</strong> Utilizing state-of-the-art machine learning models, our system achieves high accuracy in identifying and classifying various types of cyber threats.</li>
+            <li><strong>Automated KQL query execution for security monitoring:</strong> The system automatically executes Kusto Query Language (KQL) queries to monitor and analyze security data, ensuring continuous protection and quick response to incidents.</li>
+        </ul>
 
-            <h2>Project Details</h2>
-            <p>This project involved the development and deployment of an
-                AI-driven cybersecurity platform designed to enhance the
-                efficiency and effectiveness of threat detection and response.
-                Key components of the project include:</p>
-            <ul>
-                <li><strong>Data Collection:</strong> Aggregating and
-                    preprocessing large volumes of security data from various
-                    sources, including network logs, endpoint data, and threat
-                    intelligence feeds.</li>
-                <li><strong>Machine Learning Models:</strong> Developing and
-                    training machine learning models to detect anomalies,
-                    classify threats, and predict potential security
-                    incidents.</li>
-                <li><strong>Automation:</strong> Implementing automation
-                    workflows to streamline the investigation and response
-                    processes, reducing the manual effort required by security
-                    analysts.</li>
-                <li><strong>Real-Time Monitoring:</strong> Setting up real-time
-                    monitoring and alerting mechanisms to ensure immediate
-                    detection and response to security events.</li>
-            </ul>
+        <h2>Project Details</h2>
+        <p>This project involved the development and deployment of an AI-driven cybersecurity platform designed to enhance the efficiency and effectiveness of threat detection and response. Key components of the project include:</p>
+        <ul>
+            <li><strong>Data Collection:</strong> Aggregating and preprocessing large volumes of security data from various sources, including network logs, endpoint data, and threat intelligence feeds.</li>
+            <li><strong>Machine Learning Models:</strong> Developing and training machine learning models to detect anomalies, classify threats, and predict potential security incidents.</li>
+            <li><strong>Automation:</strong> Implementing automation workflows to streamline the investigation and response processes, reducing the manual effort required by security analysts.</li>
+            <li><strong>Real-Time Monitoring:</strong> Setting up real-time monitoring and alerting mechanisms to ensure immediate detection and response to security events.</li>
+        </ul>
 
-            <h2>Future Work</h2>
-            <p>Future enhancements to the AI-driven cybersecurity platform
-                include:</p>
-            <ul>
-                <li>Integration with additional data sources to improve threat
-                    detection capabilities.</li>
-                <li>Continuous improvement of machine learning models to enhance
-                    accuracy and reduce false positives.</li>
-                <li>Development of advanced visualization tools to provide
-                    better insights into security data.</li>
-                <li>Expansion of automation capabilities to cover a wider range
-                    of security tasks.</li>
-            </ul>
-            <span>Download The detailed Project Report </span>
-            <br>
-            <a
-                href="/projects/AI-Driven Cybersecurity Investigation – POC Achievements & Technical Implementation.docx"
-                download="AI-Driven Cybersecurity Investigation – POC Achievements & Technical Implementation.docx">
-                <button>Download File</button>
-            </a>
-        </div>
-    </body>
+        <h2>Future Work</h2>
+        <p>Future enhancements to the AI-driven cybersecurity platform include:</p>
+        <ul>
+            <li>Integration with additional data sources to improve threat detection capabilities.</li>
+            <li>Continuous improvement of machine learning models to enhance accuracy and reduce false positives.</li>
+            <li>Development of advanced visualization tools to provide better insights into security data.</li>
+            <li>Expansion of automation capabilities to cover a wider range of security tasks.</li>
+        </ul>
+
+        <span>Download the detailed Project Report:</span>
+        <br>
+        <button id="download-btn">Download File</button>
+    </div>
+
+    <script>
+        function downloadFile() {
+            const fileUrl = "../projects/AI-Driven Cybersecurity Investigation – POC Achievements & Technical Implementation.docx";
+            const fileName = "AI-Driven-Cybersecurity-Investigation.docx";
+
+            const a = document.createElement("a");
+            a.href = fileUrl;
+            a.download = fileName;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        }
+
+        document.getElementById("download-btn").addEventListener("click", downloadFile);
+    </script>
+</body>
 </html>
