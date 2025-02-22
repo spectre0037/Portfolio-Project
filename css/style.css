@@ -218,7 +218,7 @@ html {
 
 header {
     position: relative;
-    top: -30px;
+    top: -60px;
     width: 72px;
     text-align: center;
     float: left;
@@ -358,7 +358,7 @@ header {
 .main-card {
     position: relative;
     width: 480px;
-    top: -50px;
+    top: -60px;
     height: 110%;
     float: left;
     border-radius: 4px;
@@ -606,7 +606,7 @@ header {
     overflow: hidden;
     left: 560px;
     right: 0;
-    top: -35px;
+    top: -50px;
     bottom: 15px;
     width: auto;
     height: auto;
@@ -1782,4 +1782,12 @@ input[name=menu-list]:checked+label {
 
 .form-group input[type=submit]:hover {
     color: var(--dark-blue)
+}
+@media screen and (max-width:600px) {
+    header{
+        top: 0px;
+    }
+    .main-card{
+        top: 0px;
+    }
 }
