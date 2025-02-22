@@ -1,72 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Medical Chatbot</title>
-        <link rel="stylesheet" href="../css/project_style.css">
-    </head>
-    <body>
-        <div class="container">
-            <header>
-                <h1>Medical Chatbot using Llama2</h1>
-                <p>An AI-powered chatbot providing real-time medical assistance
-                    using NLP.</p>
-            </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Chatbot</title>
+    <link rel="stylesheet" href="../css/project_style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Medical Chatbot using Llama2</h1>
+            <p>An AI-powered chatbot providing real-time medical assistance using NLP.</p>
+        </header>
 
-            <section>
-                <h2>Key Features</h2>
-                <ul>
-                    <li>Utilizes Llama2 for NLP-driven medical queries.</li>
-                    <li>Deployed using Flask and Docker.</li>
-                    <li>Real-time responses for patient queries.</li>
-                    <li>Secure and confidential handling of patient data.</li>
-                    <li>24/7 availability for medical assistance.</li>
-                </ul>
-            </section>
+        <section>
+            <h2>Key Features</h2>
+            <ul>
+                <li>Utilizes Llama2 for NLP-driven medical queries.</li>
+                <li>Deployed using Flask and Docker.</li>
+                <li>Real-time responses for patient queries.</li>
+                <li>Secure and confidential handling of patient data.</li>
+                <li>24/7 availability for medical assistance.</li>
+            </ul>
+        </section>
 
-            <section>
-                <h2>How It Works</h2>
-                <p>The Medical Chatbot leverages the power of Llama2, a
-                    state-of-the-art NLP model, to understand and respond to
-                    medical queries. The chatbot is deployed using Flask, a
-                    lightweight web framework, and Docker, which ensures a
-                    consistent and isolated environment for the application.</p>
-                <ol>
-                    <li>User inputs a medical query into the chatbot
-                        interface.</li>
-                    <li>The query is processed by the Llama2 model to understand
-                        the context and intent.</li>
-                    <li>The chatbot generates a response based on the processed
-                        query.</li>
-                    <li>The response is sent back to the user in real-time.</li>
-                </ol>
-            </section>
+        <section>
+            <h2>How It Works</h2>
+            <p>The Medical Chatbot leverages the power of Llama2, a state-of-the-art NLP model, 
+                to understand and respond to medical queries. The chatbot is deployed using Flask, 
+                a lightweight web framework, and Docker, which ensures a consistent and isolated 
+                environment for the application.</p>
+            <ol>
+                <li>User inputs a medical query into the chatbot interface.</li>
+                <li>The query is processed by the Llama2 model to understand the context and intent.</li>
+                <li>The chatbot generates a response based on the processed query.</li>
+                <li>The response is sent back to the user in real-time.</li>
+            </ol>
+        </section>
 
-            <section>
-                <h2>Technologies Used</h2>
-                <ul>
-                    <li><strong>Llama2:</strong> For natural language processing
-                        and understanding.</li>
-                    <li><strong>Flask:</strong> For building the web
-                        application.</li>
-                    <li><strong>Docker:</strong> For containerizing the
-                        application.</li>
-                    <li><strong>HTML & CSS:</strong> For structuring and styling
-                        the web pages.</li>
-                </ul>
-                <span>Download The detailed Project Report </span>
-                <br>
-                <a
-                    href="/projects/Comprehensive Documentation for Medical Chatbot.pdf"
-                    download="Comprehensive Documentation for Medical Chatbot.pdf">
-                    <button>Download File</button>
-                </a>
-            </section>
+        <section>
+            <h2>Technologies Used</h2>
+            <ul>
+                <li><strong>Llama2:</strong> For natural language processing and understanding.</li>
+                <li><strong>Flask:</strong> For building the web application.</li>
+                <li><strong>Docker:</strong> For containerizing the application.</li>
+                <li><strong>HTML & CSS:</strong> For structuring and styling the web pages.</li>
+            </ul>
+            <span>Download The detailed Project Report:</span>
+            <br>
+            <button id="download-btn">Download File</button>
+        </section>
 
-            <footer>
-                <p>&copy; 2023 Medical Chatbot. All rights reserved.</p>
-            </footer>
-        </div>
-    </body>
+        <footer>
+            <p>&copy; 2023 Medical Chatbot. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        function downloadFile() {
+            const fileUrl = "../projects/Comprehensive Documentation for Medical Chatbot.pdf";
+            const fileName = "Medical-Chatbot-Project-Report.pdf";
+
+            const a = document.createElement("a");
+            a.href = fileUrl;
+            a.download = fileName;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        }
+
+        document.getElementById("download-btn").addEventListener("click", downloadFile);
+    </script>
+</body>
 </html>

@@ -1,81 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Invoice Scanning & Prediction</title>
-        <link rel="stylesheet" href="../css/project_style.css">
-    </head>
-    <body>
-        <div class="container">
-            <header>
-                <h1>Invoice Automatic Scanning & Text Prediction</h1>
-                <p>Automating the extraction of key details from invoices using
-                    YOLOv4 and Tesseract OCR.</p>
-            </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Scanning & Prediction</title>
+    <link rel="stylesheet" href="../css/project_style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Invoice Automatic Scanning & Text Prediction</h1>
+            <p>Automating the extraction of key details from invoices using YOLOv4 and Tesseract OCR.</p>
+        </header>
 
-            <section id="overview">
-                <h2>Project Overview</h2>
-                <p>Businesses still manually process digital invoices, which is
-                    time-consuming and prone to errors. This project aims to
-                    automate the extraction of key details from invoices using
-                    advanced machine learning and computer vision techniques. By
-                    leveraging YOLOv4 for object detection and Tesseract OCR for
-                    text recognition, we can significantly reduce the time and
-                    effort required for invoice processing.</p>
-            </section>
+        <section id="overview">
+            <h2>Project Overview</h2>
+            <p>Businesses still manually process digital invoices, which is time-consuming and prone to errors. This project aims to automate the extraction of key details from invoices using advanced machine learning and computer vision techniques. By leveraging YOLOv4 for object detection and Tesseract OCR for text recognition, we can significantly reduce the time and effort required for invoice processing.</p>
+        </section>
 
-            <section id="achievements">
-                <h2>Key Achievements</h2>
-                <ul>
-                    <li>Trained a YOLOv4 model for object detection on a custom
-                        dataset of invoices, achieving high accuracy in
-                        detecting key fields such as invoice number, date, and
-                        total amount.</li>
-                    <li>Implemented Tesseract OCR to accurately recognize and
-                        extract text from the detected fields, ensuring reliable
-                        data extraction.</li>
-                    <li>Developed an end-to-end automated pipeline that handles
-                        invoice upload, object detection, text recognition, and
-                        data extraction seamlessly.</li>
-                    <li>Integrated the pipeline with a user-friendly web
-                        interface for easy access and operation.</li>
-                </ul>
-            </section>
+        <section id="achievements">
+            <h2>Key Achievements</h2>
+            <ul>
+                <li>Trained a YOLOv4 model for object detection on a custom dataset of invoices, achieving high accuracy in detecting key fields such as invoice number, date, and total amount.</li>
+                <li>Implemented Tesseract OCR to accurately recognize and extract text from the detected fields, ensuring reliable data extraction.</li>
+                <li>Developed an end-to-end automated pipeline that handles invoice upload, object detection, text recognition, and data extraction seamlessly.</li>
+                <li>Integrated the pipeline with a user-friendly web interface for easy access and operation.</li>
+            </ul>
+        </section>
 
-            <section id="technology">
-                <h2>Technology Stack</h2>
-                <p>This project utilizes a variety of technologies and tools to
-                    achieve its goals:</p>
-                <ul>
-                    <li><strong>Python:</strong> The primary programming
-                        language used for developing the machine learning models
-                        and the automation pipeline.</li>
-                    <li><strong>YOLOv4:</strong> A state-of-the-art object
-                        detection model used to identify key fields in the
-                        invoices.</li>
-                    <li><strong>Tesseract OCR:</strong> An optical character
-                        recognition engine used to extract text from the
-                        detected fields.</li>
-                    <li><strong>OpenCV:</strong> A computer vision library used
-                        for image processing and manipulation.</li>
-                    <li><strong>PyCharm:</strong> An integrated development
-                        environment (IDE) used for writing and debugging the
-                        code.</li>
-                    <li><strong>Flask:</strong> A web framework used to create
-                        the web interface for the application.</li>
-                    <li><strong>HTML/CSS:</strong> Used for designing the web
-                        interface and ensuring a responsive and user-friendly
-                        experience.</li>
-                </ul>
-                <span>Download The detailed Project Report </span>
-                <br>
-                <a
-                    href="/projects/Invoice Automatic Scanning and Text Predictions.pdf"
-                    download="Invoice Automatic Scanning and Text Predictions.pdf">
-                    <button>Download File</button>
-                </a>
-            </section>
-        </div>
-    </body>
+        <section id="technology">
+            <h2>Technology Stack</h2>
+            <p>This project utilizes a variety of technologies and tools to achieve its goals:</p>
+            <ul>
+                <li><strong>Python:</strong> The primary programming language used for developing the machine learning models and the automation pipeline.</li>
+                <li><strong>YOLOv4:</strong> A state-of-the-art object detection model used to identify key fields in the invoices.</li>
+                <li><strong>Tesseract OCR:</strong> An optical character recognition engine used to extract text from the detected fields.</li>
+                <li><strong>OpenCV:</strong> A computer vision library used for image processing and manipulation.</li>
+                <li><strong>PyCharm:</strong> An integrated development environment (IDE) used for writing and debugging the code.</li>
+                <li><strong>Flask:</strong> A web framework used to create the web interface for the application.</li>
+                <li><strong>HTML/CSS:</strong> Used for designing the web interface and ensuring a responsive and user-friendly experience.</li>
+            </ul>
+        </section>
+
+        <section class="download-section">
+            <h2>Project Documentation</h2>
+            <p>Download the comprehensive project report for detailed insights.</p>
+            <button id="download-btn">Download Report</button>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Invoice Scanning & Prediction. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById("download-btn").addEventListener("click", function () {
+            const fileUrl = "../projects/Invoice Automatic Scanning and Text Predictions.pdf";
+            const fileName = "Invoice_Automatic_Scanning_Report.pdf";
+
+            const a = document.createElement("a");
+            a.href = fileUrl;
+            a.download = fileName;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        });
+    </script>
+</body>
 </html>
