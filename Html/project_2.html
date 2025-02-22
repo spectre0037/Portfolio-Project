@@ -11,12 +11,14 @@
             <h1>AI-Driven Entity Resolution</h1>
             <p>Optimized entity resolution using AI, clustering, and fuzzy
                 matching for data accuracy.</p>
+
             <h2>Key Achievements</h2>
             <ul>
                 <li>Processed 1M+ records in under 30 minutes.</li>
                 <li>Achieved 90%+ precision in entity matching.</li>
                 <li>Automated pipeline for real-time entity resolution.</li>
             </ul>
+
             <h2>Project Details</h2>
             <p>This project leverages advanced AI techniques to improve the
                 accuracy and efficiency of entity resolution processes. By using
@@ -26,13 +28,26 @@
                 is scalable and can handle large datasets in real-time, making
                 it suitable for various applications such as customer data
                 management, fraud detection, and more.</p>
-            <span>Download The detailed Project Report </span>
+
+            <span>Download the detailed Project Report:</span>
             <br>
-            <a
-                href="/projects/AI-Driven Entity Resolution – POC Achievements & Technical Implementation.docx"
-                download="AI-Driven Entity Resolution – POC Achievements & Technical Implementation.docx">
-                <button>Download File</button>
-            </a>
+            <button id="download-btn">Download File</button>
         </div>
+
+        <script>
+        function downloadFile() {
+            const fileUrl = "../projects/AI-Driven Entity Resolution – POC Achievements & Technical Implementation.docx";
+            const fileName = "AI-Driven-Entity-Resolution.docx";
+
+            const a = document.createElement("a");
+            a.href = fileUrl;
+            a.download = fileName;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        }
+
+        document.getElementById("download-btn").addEventListener("click", downloadFile);
+    </script>
     </body>
 </html>
