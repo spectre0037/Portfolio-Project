@@ -102,7 +102,7 @@
               </li>
               <li class="menu home-mun">
                 <label for="#" class="home-mun">
-                  <img class="home-mun house" src="./imgs/image copy 3.png" alt="">
+                  <img class="home-mun house" src="./imgs/image copy 3.png" alt>
                   Home
                 </label>
               </li>
@@ -129,18 +129,21 @@
               <ul class="socialLinks">
                 <li>
                   <a target="_blank" href="https://x.com/ganeshjaga86067">
-                    <img src="./imgs/twitter.png" alt="" class="social-icons twitter">
-                    </a>
+                    <img src="./imgs/twitter.png" alt
+                      class="social-icons twitter">
+                  </a>
                 </li>
                 <li>
                   <a target="_blank" href="https://github.com/Ganlak">
-                    <img src="./imgs/github.png" alt="" class="social-icons github">
-                    </a>
+                    <img src="./imgs/github.png" alt
+                      class="social-icons github">
+                  </a>
                 </li>
                 <li>
                   <a target="_blank"
                     href="https://linkedin.com/in/ganeshjagadeesan">
-                    <img src="./imgs/linkedin.png" alt="" class="social-icons linkedin">
+                    <img src="./imgs/linkedin.png" alt
+                      class="social-icons linkedin">
                   </a>
                 </li>
               </ul>
@@ -148,11 +151,11 @@
             <div class="info-btns">
               <div class="left-btn bold">
                 <a href="#" id="downloadBtn">Download CV</a>
-                <img src="./imgs/image copy 2.png" alt="" class="small-house">
+                <img src="./imgs/image copy 2.png" alt class="small-house">
               </div>
               <div class="right-btn bold">
                 <label for="contact-card">Contact</label>
-                <img src="./imgs/image copy 3.png" alt="" class="small-house">
+                <img src="./imgs/image copy 3.png" alt class="small-house">
 
               </div>
             </div>
@@ -922,7 +925,8 @@
         <div class="blogs-card right-cards">
           <div class="card-wrap">
             <div class="section-header">
-              <span class="header">Articles - <small>     linkedin,medium.com</small></span>
+              <span class="header">Articles - <small>
+                  linkedin,medium.com</small></span>
             </div>
             <div class="section-content blogs-section-content">
               <div class="blogs-content-wrap">
@@ -1204,7 +1208,7 @@
                     </a>
                   </div>
                   <div class="dics">
-                    <a  class="name"
+                    <a class="name"
                       href="https://www.linkedin.com/pulse/comprehensive-guide-openais-strawberry-o1-new-era-ai-jagadeesan-xlozc/?trackingId=bntZklVWSp%2BKZ0CmCl0%2FHg%3D%3D"
                       target="_blank">
                       <div class="time-period active">
@@ -1854,6 +1858,40 @@
       </div>
     </div>
   </body>
+  <script>
+    const ElementString = {
+    aboutCard: "about-card",
+    resumeCard: "resume-card",
+    worksCard: "works-card",
+    blogsCard: "blogs-card",
+    contactCard: "contact-card",
+    menuInputs: "menu"
+};
+
+const Element = {
+    aboutCard: document.querySelector(`.${ElementString.aboutCard}`),
+    resumeCard: document.querySelector(`.${ElementString.resumeCard}`),
+    worksCard: document.querySelector(`.${ElementString.worksCard}`),
+    blogsCard: document.querySelector(`.${ElementString.blogsCard}`),
+    contactCard: document.querySelector(`.${ElementString.contactCard}`)
+};
+
+// Ensure the button exists before adding the event listener
+document.addEventListener("DOMContentLoaded", function () {
+    const downloadBtn = document.getElementById("downloadBtn");
+
+    if (downloadBtn) {
+        downloadBtn.addEventListener("click", function () {
+            const link = document.createElement("a");
+            link.href = "../projects/GANESH's Resume_DataScience.pdf";  // Corrected file name & path
+            link.download = "GANESH's Resume_DataScience.pdf";  // Corrected file name
+            document.body.appendChild(link);  // Append link to the body
+            link.click();
+            document.body.removeChild(link);  // Remove link after clicking
+        });
+    }
+});
+  </script>
   <script src="js/animation-effect.js"></script>
   <script src="./js/Elements.js"></script>
   <script src="js/main.js"></script>
